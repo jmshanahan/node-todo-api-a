@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha server/**/*.test.js",
     "test-watch": "nodemon --exec 'yarn test'",
-    "start": "node server",
+    "start": "node server/server",
     "server": " nodemon server/server.js",
     "lint": "eslint '**/*.{js,jsx}' --quiet"
   },

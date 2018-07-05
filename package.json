@@ -3,7 +3,31 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec 'yarn test'",
+    "start": "node server",
+    "server": " nodemon server/server.js",
+    "lint": "eslint '**/*.{js,jsx}' --quiet"
+  },
   "dependencies": {
-    "mongodb": "2.2.5"
+    "body-parser": "1.15.2",
+    "express": "4.14.0",
+    "mongodb": "2.2.5",
+    "mongoose": "4.5.9",
+    "unix-timestamp": "^0.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "17.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.1",
+    "eslint-plugin-react": "^7.9.1",
+    "expect": "1.20.2",
+    "mocha": "3.0.2",
+    "nodemon": "1.10.2",
+    "supertest": "2.0.0"
   }
 }

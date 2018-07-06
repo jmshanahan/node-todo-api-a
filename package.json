@@ -10,6 +10,9 @@
     "server": " nodemon server/server.js",
     "lint": "eslint '**/*.{js,jsx}' --quiet"
   },
+  "engine":{
+    "node": "8.11.3"
+  },
   "dependencies": {
     "body-parser": "1.15.2",
     "express": "4.14.0",
